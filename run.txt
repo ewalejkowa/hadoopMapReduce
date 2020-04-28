@@ -1,0 +1,19 @@
+Zad.A
+hadoop jar hadoop1.jar TitleCount -D stopwords=dataset/misc/stopwords.txt -D delimiters=dataset/misc/delimiters.txt dataset/titles/ A-output
+Zad. B
+hadoop jar hadoop1.jar TopTitles -D stopwords=dataset/misc/stopwords.txt -D  delimiters=dataset/misc/delimiters.txt -D N=5 dataset/titles/ B-output
+
+Zad. c
+hadoop jar hadoop1.jar newpackage.TopTitleStatistics -D stopwords=dataset/misc/stopwords.txt -D delimiters=dataset/misc/delimiters.txt -D N=5 dataset/titles C-output
+
+
+Zad D
+
+hadoop jar hadoop1.jar OrphanPages dataset/links D-output
+
+Zad E
+hadoop jar hadoop1.jar links.TopPopularLinks -D N=5 dataset/links E-output
+
+Zad F
+hadoop jar hadoop1.jar popularity.PopularityLeague -D league=dataset/misc/league.txt dataset/links F-output
+
